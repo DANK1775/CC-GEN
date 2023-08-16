@@ -8,9 +8,9 @@
 <body>
     <form action="pros.php" method="post">
         <label for="nombre">nombre</label>
-        <input type="text" name="Ncompleto" id="nombre">
+        <input type="text" name="nombre" id="nombre">
         <label for="fecha"></label>
-        <input type="date" name="datefecha" id="fecha">
+        <input type="date" name="fecha" id="fecha">
         <input type="submit">
     </form>
 </body>
