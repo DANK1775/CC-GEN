@@ -11,7 +11,10 @@
         <input type="text" name="nombre" id="nombre">
         <label for="fecha"></label>
         <input type="date" name="fecha" id="fecha">
+        <label for="comentario">comentario</label>
+        <input type="textarea" name="comentario" id="comentario">
         <input type="submit">
+        
     </form>
 </body>
 </html>
