@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    var_dump($_POST);
+    
     // Obtener los datos del formulario
     $nombre = $_POST['nombre'];
     $fecha = $_POST['fecha'];
@@ -37,5 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Cerrar la conexión
     mysqli_close($conexion);
+
+    echo ($DB_HOST);
 }
 ?>

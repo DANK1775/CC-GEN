@@ -7,6 +7,8 @@
 </head>
 <body>
     <form action="pros.php" method="post">
+
+    
         <label for="nombre">nombre</label>
         <input type="text" name="nombre" id="nombre">
         <label for="fecha"></label>
