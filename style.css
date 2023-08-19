@@ -1,0 +1,84 @@
+* {
+  /* resetear valores predeterminados html */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  /* aplica grid a todo el body */
+  place-items: center;
+  /* todo sera centrado en el centro*/
+  color: #FFFEFF;
+  /* color de la fuente */
+  background-color: #181623;
+  /* color de fondo */
+  opacity: 1;
+  background-image: radial-gradient(#2c2a37 1px, transparent 1px), radial-gradient(#2c2a37 1px, #181623 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+.intro {
+  /* texto principal */
+  margin-top: 1.5rem;
+  text-align: center;
+  border: 0.13em solid #312f3C;
+  /* border del titulo*/
+  border-radius: 20px;
+  background-color: #181623;
+  /* color de fondo del titulo*/
+  width: 50%;
+}
+
+.intro-text p {
+  /* texto principal p */
+  color: #95969E;
+}
+
+/* contenedor del generador y el resultado*/
+.cc-main {
+  background-color: #181623;
+  width: 80%;
+  height: 25rem;
+  border: 0.13em solid #312f3C;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+/* contenedor del generador */
+.cc-gen {
+  width: 50%;
+  border: solid red;
+}
+
+.input-conatiner {
+  /* div con posision relativa */
+  position: relative; 
+  margin: 2rem 0 0 0.5rem;
+}
+
+.label {
+  /* label con posision absoluta */
+  position: absolute;
+  bottom: 2rem;
+  left: 5%;
+  background-color: #181623;
+}
+
+span {
+  padding: 1rem 1rem 1rem 1rem;
+  border: solid red;
+  border-radius: 10px;
+}
+
+.input {
+  background-color: #181623;
+  border: none;
+  border-bottom: solid blue !important;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
