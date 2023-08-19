@@ -44,41 +44,97 @@ body {
   border: 0.13em solid #312f3C;
   border-radius: 20px;
   margin-top: 2rem;
+  
 }
 
 /* contenedor del generador */
 .cc-gen {
   width: 50%;
-  border: solid red;
+  /* border: solid red; */
+
 }
 
 .input-conatiner {
   /* div con posision relativa */
+  display: grid;
   position: relative; 
   margin: 2rem 0 0 0.5rem;
+  /* border: solid blue; */
+  /* justify-content: space-between; */
 }
 
 .label {
   /* label con posision absoluta */
   position: absolute;
-  bottom: 2rem;
+  bottom: 3rem;
   left: 5%;
   background-color: #181623;
+  /* espaciado dentre barras */
+  padding: 0 0.3rem;
 }
 
-span {
+.label2 {
+  /* label con posision absoluta y de el otro lado */
+  position: absolute;
+  bottom: 3rem;
+  left: 55%;
+  background-color: #181623;
+  /* espaciado dentre barras */
+  padding: 0 0.3rem;
+}
+ 
+/* para cantidad */
+.label3 {
+  left: 58%;
+}
+
+
+span {  /* floating label line*/
   padding: 1rem 1rem 1rem 1rem;
-  border: solid red;
+  border: solid #7A41C4 1.9px;
   border-radius: 10px;
+}
+
+
+
+.año { /* espaciado de los formularios juntos*/
+  margin-left: 10%;
+}
+.cantidad {
+  margin-left: 0.5rem;
 }
 
 .input {
   background-color: #181623;
   border: none;
-  border-bottom: solid blue !important;
+  color: #FFFEFF;
 }
 
-input:focus {
+.input:focus {
   outline: none;
   border: none;
+}
+
+.fa-credit-card { /* logo de credir card */
+  margin: 0 0.2rem;
+}
+
+.select-mes, .select-año { 
+  width: 10rem;
+}
+
+.input-cvv {
+  width: 13rem;
+}
+
+.boton {
+  border: none;
+  padding: 0.5rem 3rem;
+  background-color: #7A41C4;
+
+  border-radius: 10px;
+  font-size: 1.1rem;
+
+  margin: 1.8rem 30%;
+
 }

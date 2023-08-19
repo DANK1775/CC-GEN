@@ -30,16 +30,76 @@
 
             <form action="/" method="post">
 
+                <!-- bin -->
                 <div class="input-conatiner">
-                    <span>
-                        <input type="text" name="bin" id="bin" class="bin input">
+                    <span class="bin">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <input type="text" name="bin" id="bin" class="input" required placeholder="5126 XXXX XXXX XXXX">
                     </span>
-                        <label for="bin" class="label">  BIN  </label>
+                    <label for="bin" class="label"> BIN </label>
                 </div>
 
-                
+                <!-- mes -->
+                <div class="input-conatiner c2 d-flex">
+                    <span class="mes">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <select name="mes" id="mes" class="input select-mes" required>
+                            <option value="0" selected>Aleatorio</option>
+                            <option value="1">Enero</option>
+                            <option value="2">Febrero</option>
+                            <option value="3">Marzo</option>
+                            <option value="4">Abril</option>
+                            <option value="5">Mayo</option>
+                            <option value="6">Junio</option>
+                            <option value="7">Julio</option>
+                            <option value="8">Agosto</option>
+                            <option value="9">Setiembe</option>
+                            <option value="10">Octube</option>
+                            <option value="11">Nobiembre</option>
+                            <option value="12">Diciembre</option>
+                        </select>
+                    </span>
+                    <label for="mes" class="label"> MES </label>
+                    <!-- año -->
+                    <span class="año">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <select name="año" id="año" class="input select-año" required>
+                            <option value="0" selected>Aleatorio</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            <option value="2031">2031</option>
+                            <option value="2032">2032</option>
+                        </select>
+                    </span>
+                    <label for="año" class="label2"> AÑO </label>
+                </div>
+
+                <div class="input-conatiner d-flex">
+                    <span class="cvv">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <input type="text" name="cvv" id="cvv" class="input input-cvv" required
+                            placeholder="deja en blanco para aleatorio">
+                    </span>
+                    <label for="cvv" class="label"> CVV </label>
+
+                    <span class="cantidad">
+                        <i class="fa-solid fa-hashtag"></i>
+                        <input type="text" name="cantidad" id="cantidad" class="input input-camtidad" required
+                            value="5">
+                    </span>
+                    <label for="cantidad" class="label label3"> CANTIDAD </label>
+                </div>
+                <button type="submit" id="submit" class="boton"> <i class="fa-solid fa-gear"></i> Generar</button>
+
             </form>
 
+            <div> </div>
         </section>
 
 
@@ -56,5 +116,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+<!-- jquerry -->
+<script src="https://code.jquery.com/jquery-3.7.0.slim.js"
+    integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
 
 </html>
