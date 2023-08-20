@@ -10,6 +10,10 @@ let cantidad = 0;
 
 let cc = 0;
 
+
+let ioz = ""
+
+
 document.getElementById("submit").addEventListener("click", function (event) {
   event.preventDefault();
 
@@ -27,6 +31,8 @@ document.getElementById("submit").addEventListener("click", function (event) {
 
   // cantidad valor
   cantidad = document.getElementById("cantidad").value;
+
+  ioz = ""
 
 
   // comprobacio de espacios bin , cvv y cantidad
@@ -53,7 +59,6 @@ document.getElementById("submit").addEventListener("click", function (event) {
     swal("ERROR", "la catidad generada no puede ser 0 o menor", "error");
     event.preventDefault();
   }
-
 
 
   if (bin.length == 16) {
@@ -94,10 +99,26 @@ document.getElementById("submit").addEventListener("click", function (event) {
       }
 
       // Crear un elemento div para mostrar el número generado
-      const numeroGenerado = document.createElement("div");
-      numeroGenerado.textContent = cc + "|" + fechaMes + "|" + fechaAño + "|" + code;
-      document.body.appendChild(numeroGenerado); // Agregar al final del body
+      // let numeroGenerado = document.getElementById("tarjetas");
+      // numeroGenerado.textContent = cc + "|" + fechaMes + "|" + fechaAño + "|" + code;
+      // document.div.appendChild(numeroGenerado); 
+      
+      let tarjetasDiv = document.getElementById("tarjetas")
+      ccGen = cc + "|" + fechaMes + "|" + fechaAño + "|" + code
+
+      ioz += ccGen + "\n"
+
+      
+      tarjetasDiv.innerHTML = "<br>" + ioz;
+
     }
   }
 
 });
+
+
+
+
+
+
+

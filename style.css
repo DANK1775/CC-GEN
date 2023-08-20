@@ -138,3 +138,44 @@ span {  /* floating label line*/
   margin: 1.8rem 30%;
 
 }
+
+.cc-output {
+  width: 50%;
+  height: 100%;
+  /* border: solid blue; */
+  display: grid;
+  position: relative;
+}
+
+.tarjetas {
+  /* margin: 3rem; */
+  /* border: solid red; */
+  border-radius: 1rem;
+  text-align: center;
+  white-space: pre-line; /* O pre-wrap según tus necesidades */
+ 
+
+}
+
+.pr {
+  position: absolute;
+  left: 15%;
+  bottom: 89%;
+  background-color: #181623;
+  padding: 0 0.3rem;
+  border-radius: 0.3rem;
+}
+
+.resultados {
+  margin: 2rem;
+
+  overflow: auto; /* Crear barra de desplazamiento si el contenido se sale */
+  max-height: 100%; /* Altura máxima del elemento antes de mostrar la barra de desplazamiento */
+
+}
+
+.fa-copy {
+  position: absolute;
+  bottom: 12%;
+  right: 12%;
+}
